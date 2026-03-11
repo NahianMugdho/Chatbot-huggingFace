@@ -3,4 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+    server: {
+    host: '0.0.0.0',  // ← এটা যোগ করো
+    port: 5173,        // ← optional, default এটাই
+  }
 })
